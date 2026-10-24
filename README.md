@@ -2,15 +2,26 @@
 
 **智博资料室** · v1.0.5 · `team`
 
-> A 7-member expert team for knowledge-base management across the full lifecycle: ingest, classification, maturity promotion, indexing, grounded Q&A, quality inspection, archiving and metrics.
+> KB Library Team — a chief knowledge officer with six internalized domains that turns scattered files into a query-ready knowledge base
 
 
-Part of the [WorkBuddy Experts](https://github.com/Lucewalk/lucewalk-experts) collection — expert teams, agents and skills for the WorkBuddy AI assistant platform.
+Part of the [WorkBuddy Experts](https://github.com/Lucewalk/lucewalk-experts) collection.
 
 
 ## What it does
 
-- **kb-governance-playbook** — "知识库治理方法论库：八域模型、四池成熟度、grounding 纪律、三级巡检、归档协议、价值度量与冷启动能力地图，附 4 个确定性脚本与 5 份产出模板。形态中立，宿主特例（Obsidian/IMA/LLM Wiki/乐享）见 references/hosts。当智博资料室成员
+- **Ingest** — multi-source intake with normalization and hard guardrails (≤50 files per batch)
+- **Classify** — directory design and batch classification plans, executed only after your confirmation
+- **Promote** — four-pool maturity gates (idea → draft → official → archive) as the single quality standard
+- **Index** — MOC / index / bidirectional links / tags, kept on separate layers
+- **Grounded Q&A** — answers that cite the library entry they came from
+- **Archive & metrics** — archive-without-delete versioning plus health and value metrics
+
+## How it works
+
+- One chief knowledge officer (库正) carries six internalized domains instead of spawning sub-agents
+- A governance playbook skill (`kb-governance-playbook`) encodes the operating rules
+- Single-domain, read-only requests can be answered directly; everything else walks the full SOP
 
 ## Agent roster
 
@@ -24,16 +35,23 @@ Part of the [WorkBuddy Experts](https://github.com/Lucewalk/lucewalk-experts) co
 | `kb-library-team-lead` | 首席知识管理官 - 库正 |
 | `kb-promotion-reviewer` | 晋级评审官 - 关晋 |
 
+## Skills
+
+`kb-governance-playbook`
+
 ## Install
 
 1. Download the package zip from [Releases](https://github.com/Lucewalk/kb-library-team/releases) or clone this repo;
-2. Unzip keeping the internal manifest structure intact;
+2. Unzip keeping the `.codebuddy-plugin/` manifest structure intact;
 3. Import/register in WorkBuddy (custom connector → trust & enable).
+
 
 ## Version
 
-Current release: **v1.0.5** — see [CHANGELOG.md](CHANGELOG.md) if present, or the package manifest.
+Current release: **v1.0.5**. See the package manifest for details.
+
 
 ## License
 
 MIT — see [LICENSE](LICENSE).
+
