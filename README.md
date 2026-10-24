@@ -5,7 +5,7 @@
 > KB Library Team — a chief knowledge officer with six internalized domains that turns scattered files into a query-ready knowledge base
 
 
-Part of the [Lucewalk Experts](https://github.com/Lucewalk/lucewalk-experts) collection.
+Part of the [Lucewalk Lumen](https://github.com/Lucewalk/lucewalk-lumen) collection.
 
 
 ## What it does
